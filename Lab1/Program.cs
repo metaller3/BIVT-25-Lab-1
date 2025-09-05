@@ -4,13 +4,18 @@
     {
         public static void Main()
         {
-            //White white = new White();
+            White white = new White();
             //Console.WriteLine(white.Task1(1.2));
-            //Console.WriteLine(white.Task2(2));
-            //Console.WriteLine(white.Task3(2.5, 1.89));
+            Console.WriteLine(white.Task2(2));
+            Console.WriteLine(white.Task3(25, 189));
             //Console.WriteLine(white.Task4(-2.5, 1.89));
             //Console.WriteLine(white.Task5(0.5));
             //Console.WriteLine(white.Task6(2.5, 1.89, 3));
         }
     }
 }
+
+//public bool Task1(int n)
+//    bool answer = false
+//answer = n % 2 == 0;
+//Console.WriteLine(n)
