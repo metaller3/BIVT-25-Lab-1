@@ -87,7 +87,7 @@
                     answer = false;
                 }
             }
-                // end
+            // end
 
                 return answer;
         }
@@ -96,29 +96,21 @@
             bool answer = false;
 
             // code here
-            int days = X;
-            int wakeup = 14;
-            int sleep = 4;
-
-            for (int day = 0; day <= days; day++)
+            int SumY = 0;
+            if (X >= 7)
             {
-                wakeup -= 1;
-                if (day % 2 == 0)
+                for (int i = 0; i < X; i++)
                 {
-                    sleep -= Y / 60;
-                }
-                int sleep1 = wakeup - sleep;
-                if (sleep1 >= 7 && sleep1 <= 9 && wakeup == 7)
-                {
-                    answer = true;
-                    break;
-                }
-                if (sleep < 0) sleep += 24;
-                if (wakeup < 0) wakeup += 24;
-            }
-                // end
+                    if ((i % 2) == 0) { SumY += Y; }
 
-                return answer;
+                }
+                if ((SumY >= 4 * 60) && (SumY <= 6 * 60))
+                    answer = true;
+            }
+            // end
+
+            return answer;
         }
     }
+
 }
